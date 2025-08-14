@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Merit List</title>
+    <link rel="stylesheet" href="data.css">
+</head>
+<body>
+
+   <div class="download-page">
+    <img src="Cet_cle.jpg" alt="">
+    <div class="button-container">
+        <button onclick="downloadFile('HOME_UNIVERSITY.xlsx')">Home University</button>
+        <button onclick="downloadFile('OTHU.xlsx')">Other than HU</button>
+        <button onclick="downloadFile('ALL_INDIA.xlsm')">All India (OTHU)</button>
+    </div>
+</div>
+
+
+    <script>
+        function downloadFile(filePath) {
+            let link = document.createElement('a');
+            link.href = filePath;
+            link.download = filePath.split('/').pop();
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+
+</body>
+</html>

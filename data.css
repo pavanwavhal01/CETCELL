@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* First page image container */
+
+
+.image-container img {
+    width: 100%;
+}
+
+
+#mainBtn {
+    position: absolute;
+    top: 93%; 
+    left: 50%;
+    padding: 12px 25px;
+    background-color: green;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+#mainBtn:hover {
+    background-color: blueviolet;
+}
+
+.download-page img{
+    width: 100%;
+}
+.button-container {
+    position: absolute;
+    top: 50vh;        
+    
+   
+    display: flex;
+    flex-direction: column;
+   
+    gap: 80px;
+
+    padding-left: 58vh ;
+
+}
+.button-container button {
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #28a745, #218838);
+    
+    border-radius: 10px;
+    cursor: pointer;
+    width: 250px;
+  
+ 
+}
+button:hover {
+    background: rgb(11, 55, 144);  
+    transform: scale(1.05); 
+}
